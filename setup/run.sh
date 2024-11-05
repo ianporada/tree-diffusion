@@ -17,8 +17,10 @@ conda activate $ENV
 cd ~/tree-diffusion
 export PYTHONPATH=.
 ASSETS_DIR=$SCRATCH/tree-diffusion/assets
+# CKPT=$ASSETS_DIR/td_csg2da.pt
+CKPT=$SCRATCH/tree-diffusion/checkpoints/a5c3cf2f-2418-4026-a92b-b35017e36340/csg2da_step_30000.pt
 python scripts/eval_td_search.py \
-    --checkpoint_name $ASSETS_DIR/td_csg2da.pt \
+    --checkpoint_name $CKPT \
     --ar_checkpoint_name $ASSETS_DIR/ar_csg2da.pt \
     --problem_filename $ASSETS_DIR/csg2da_test_set.pkl
 
