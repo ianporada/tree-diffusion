@@ -31,6 +31,23 @@ Install requirements,
 pip install -r requirements.txt
 ```
 
+#### Direct Depedencies
+
+* python==3.11
+* torch==2.1.2+cu121
+* tqdm, wandb, 
+* iceberg-dsl @ git+https://github.com/revalo/iceberg.git@db446c1ed
+* timm==1.0.3 (vision models)
+* scipy==1.13.0
+* pathos==0.3.3.dev0 (multiprocessing)
+* lz4==4.3.3
+* lark==1.1.9 (parsing toolkit)
+* datrie (0.8.2)
+* absl_py==1.4.0 (app)
+* iceberg-dsl @ git+https://github.com/revalo/iceberg.git@db446c1ed
+
+
+
 ### Usage
 
 Ensure `PYTHONPATH` is correct,
